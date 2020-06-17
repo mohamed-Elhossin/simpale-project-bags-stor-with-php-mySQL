@@ -51,7 +51,7 @@ if (isset($_GET['delete'])) {
                     <td> <?php echo $row['price'] ?> </td>
                     <td> <?php echo $row['category'] ?> </td>
 
-                    <td> <a class="btn btn-danger" href="actionProduct.php?delete=<?php echo $row['id']; ?>">Delete </a>
+                    <td> <a class="btn btn-danger" href="addproduct.php?delete=<?php echo $row['id']; ?>">Delete </a>
                <a class="btn btn-primary" href="addProduct.php?edit=<?php echo $row['id']; ?>">Edit
                          </a>
                     </td>
