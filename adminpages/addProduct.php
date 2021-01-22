@@ -1,6 +1,6 @@
 <?php
 include_once('../configDatabase.php');
-require('sessionDestrooy.php');
+
 if (isset($_POST['save'])) {
     if (
         !empty($_POST['name'])
@@ -25,8 +25,8 @@ if (isset($_POST['save'])) {
         } else {
             echo "upload faild";
         }
-        $insert = "INSERT INTO `products` (`name` , `img` , `desc` , `price`,`category`) values
- ('$name' , '$nameImg' , '$desc' ,'$price','$category')";
+        $insert = "INSERT INTO `products` (   `name` , `img` , `desc` , `price`,`category`) values
+            ('$name' , '$nameImg' , '$desc' ,'$price','$category')";
         $q = mysqli_query($conn, $insert);
         if ($q) {
             echo '<div class="alert alert-primary" role="alert">
@@ -44,7 +44,7 @@ if (isset($_POST['save'])) {
     }
 }
 
-// Edit Section 
+///Edit Section 
 $name = "";
 $desc = "";
 $price = "";
@@ -81,11 +81,14 @@ if (isset($_GET['edit'])) {
 <html lang="en">
 
 <head>
-<title> Add Products </title>
+    <title> Add Products </title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
 </head>
 
 <body>
-    <?php require('layout.php'); ?>
+
+    <a class="btn btn-info btn-block btn-lg" href="../index.php"> Home Page </a>
+    <a class="btn btn-info btn-block btn-lg" href="admin.php"> admin Page </a>
 
     <div class="container mt-5 col-md-4 text-center">
         <form method="POST" enctype="multipart/form-data">

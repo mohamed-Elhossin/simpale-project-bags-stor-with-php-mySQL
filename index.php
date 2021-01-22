@@ -60,7 +60,7 @@ $r = mysqli_query($conn, $select);
           <li class="nav-item">
             <a class="nav-link" href="login/loginPage.php">Login</a>
           </li>
-       
+
         </ul>
 
       </div>
@@ -247,20 +247,20 @@ $r = mysqli_query($conn, $select);
     </div>
     <div class="container">
       <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-            <div class="our_product">
-              <div class="card">
-                <img src="img/b1.jpg" alt="...">
-                <div class="card-body">
-                  <h6 class="card-title">product ID 5</h6>
-                  <h5 class="card-title"> jhskjald</h5>
-                  <p class="card-text"> d lkmsk </p>
-                  <p class="text-center"> Price : 9000 </p>
-                  <a href="#contact_us" class="btn btn-primary">BUY NOW</a>
-                </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+          <div class="our_product">
+            <div class="card">
+              <img src="img/b1.jpg" alt="...">
+              <div class="card-body">
+                <h6 class="card-title">product ID 9</h6>
+                <h5 class="card-title"> toma is </h5>
+                <p class="card-text"> d lkmsk </p>
+                <p class="text-center"> Price : 9000 </p>
+                <a href="#contact_us" class="btn btn-primary">BUY NOW</a>
               </div>
             </div>
           </div>
+        </div>
         <?php while ($row =  mysqli_fetch_array($r)) { ?>
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
             <div class="our_product">
@@ -277,7 +277,6 @@ $r = mysqli_query($conn, $select);
             </div>
           </div>
         <?php } ?>
-
       </div>
     </div>
   </section>
@@ -297,7 +296,7 @@ $r = mysqli_query($conn, $select);
         <div class=" col-lg-6 col-md-12">
           <div class="contact_img">
             <h1> select your location </h1>
-          <a href="https://www.google.com.eg/maps/place/%D9%85%D9%87%D9%85%D8%B4%D8%A9%D8%8C+%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D8%A8%D9%8A%D8%A9%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%E2%80%AC%E2%80%AD/@30.0727731,31.2669666,16z/data=!4m5!3m4!1s0x14583f873cae96c1:0x3ddbbf1f2c6dfb2c!8m2!3d30.073968!4d31.2640673"> <img class="img-fluid" src="img/location.png"></a>  
+            <a href="https://www.google.com.eg/maps/place/%D9%85%D9%87%D9%85%D8%B4%D8%A9%D8%8C+%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D8%A8%D9%8A%D8%A9%D8%8C+%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9+%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9%E2%80%AC%E2%80%AD/@30.0727731,31.2669666,16z/data=!4m5!3m4!1s0x14583f873cae96c1:0x3ddbbf1f2c6dfb2c!8m2!3d30.073968!4d31.2640673"> <img class="img-fluid" src="img/location.png"></a>
           </div>
         </div>
         <div class="col-lg-6 col-md-12">
@@ -306,7 +305,7 @@ $r = mysqli_query($conn, $select);
 
 
 
-            <form method="POST" action="order.php">
+            <form method="POST" action="./order.php">
               <div class="form-group">
                 <label for="exampleInputEmail1"> Name </label>
                 <input type="text" class="form-control" name="name" placeholder="Name">

@@ -2,7 +2,6 @@
 session_start();
 
 if (isset($_SESSION['user'])) {
-
 } else {
     header('location: ../login/loginPage.php');
 }
@@ -16,14 +15,14 @@ if (isset($_SESSION['user'])) {
 </head>
 
 <body>
-<a class="btn btn-info btn-block btn-lg" href="../index.php"> Home Page </a>
+    <a class="btn btn-info btn-block btn-lg" href="../index.php"> Home Page </a>
     <div class="alert alert-primary" role="alert">
         <h1> Welcome . <?php echo $_SESSION['user'];  ?> now you can select any action you want to do </h1>
     </div>
     <div class="container ">
         <div class="row">
             <div class="col-md-3">
-                <div class="card" >
+                <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Add New Product </h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -43,7 +42,7 @@ if (isset($_SESSION['user'])) {
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="card" >
+                <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Show User's oders </h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -54,4 +53,5 @@ if (isset($_SESSION['user'])) {
         </div>
     </div>
 </body>
+
 </html>

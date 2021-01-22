@@ -9,7 +9,6 @@ if (isset($_GET['delete'])) {
     $del = "DELETE FROM `products` WHERE id=$id ";
     mysqli_query($conn, $del);
     $_SESSION['message'] = "Rcord has been deleted done";
-    header("location: actionProduct.php");
 }
 
 ?>
@@ -31,11 +30,6 @@ if (isset($_GET['delete'])) {
         <h3> Welcome . now you in poducts Female</h3>
     </div>
 
-
-  
-
-
-
     <div class="container mt-5 text-center md-6">
         <table class="table">
             <tr>
@@ -51,9 +45,9 @@ if (isset($_GET['delete'])) {
                     <td> <?php echo $row['price'] ?> </td>
                     <td> <?php echo $row['category'] ?> </td>
 
-                    <td> <a class="btn btn-danger" href="addproduct.php?delete=<?php echo $row['id']; ?>">Delete </a>
-               <a class="btn btn-primary" href="addProduct.php?edit=<?php echo $row['id']; ?>">Edit
-                         </a>
+                    <td> <a class="btn btn-danger" href="prodfemale.php?delete=<?php echo $row['id']; ?>">Delete </a>
+                        <a class="btn btn-primary" href="addProduct.php?edit=<?php echo $row['id']; ?>">Edit
+                        </a>
                     </td>
                 </tr>
             <?php } ?>

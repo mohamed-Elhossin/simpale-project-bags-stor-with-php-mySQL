@@ -2,18 +2,13 @@
 <?php
 include_once('configDatabase.php');
 if ($conn) {
-    //echo 'connected';
+  //  echo 'connected';
 }
 //***************** */
+
 if (isset($_POST['submit'])) {
     # code...
-    if (
-        !empty($_POST['name']) &&
-        !empty($_POST['email'])
-        && !empty($_POST['phone'])
-        && !empty($_POST['adress'])
-        && !empty($_POST['quantity'])
-    ) {
+ 
         # code...
         $name = $_POST['name'];
         $email = $_POST['email'];
@@ -38,9 +33,7 @@ if (isset($_POST['submit'])) {
     } else {
         //  echo 'please fill the form';
     }
-} else {
-    echo 'please fill the form';
-}
+
 
 ?>
 
